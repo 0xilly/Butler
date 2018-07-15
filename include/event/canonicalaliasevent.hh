@@ -4,13 +4,12 @@
 
 namespace butler::event
 {
-    class CanonicalAliasEvent : RoomEvent
+    class CanonicalAliasEvent : public RoomEvent
     {
         private:
-            std::string alias;
+            std::string _alias;
         public:
-            CanonicalAliasEvent(std::string alias);
+            CanonicalAliasEvent(int age, std::string origin, std::string sender, std::string statekey, std::string roomid, std::string eventid, std::string alias);
             std::string getAlias();
-            
     };
 }

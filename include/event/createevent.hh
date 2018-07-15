@@ -4,14 +4,14 @@
 
 namespace butler::event
 {
-    class CreateEvent : RoomEvent
+    class CreateEvent : public RoomEvent
     {
         private:
-            std::string creator;
-            bool federate;
+            std::string _creator;
+            bool _federate;
         public:
-            CreateEvent(std::string creator, bool federate);
+            CreateEvent(int age, std::string origin, std::string sender, std::string statekey, std::string roomid, std::string eventid, std::string creator, bool federate);
             std::string getCreator();
-            bool getFederation();
+            bool doesFederate();
     };
 }

@@ -4,13 +4,14 @@
 
 namespace butler::event
 {
-    enum RULE {PUBLIC, PRIVATE, INVITE, KNOCK};
-    class JoinRulesEvent : RoomEvent
+    enum Rule {PUBLIC, PRIVATE, INVITE, KNOCK};
+    
+    class JoinRulesEvent : public RoomEvent
     {
         private:
-            RULE rule;
+            Rule _joinRule;
         public: 
-            JoinRulesEvent(RULE rule);
-            RULE getRule();
+            JoinRulesEvent(int age, std::string origin, std::string sender, std::string statekey, std::string roomid, std::string eventid, std::string creator, Rule rule);
+            Rule getJoinRule();
     };
 }

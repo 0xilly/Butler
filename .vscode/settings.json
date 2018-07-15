@@ -41,6 +41,10 @@
         "utility": "cpp",
         "__config": "cpp",
         "__nullptr": "cpp",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "cstring": "cpp",
+        "cinttypes": "cpp",
+        "memory": "cpp"
+    },
+    "discord.enabled": true
 }
