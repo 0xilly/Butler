@@ -11,7 +11,7 @@ namespace butler::event
         private:
             Rule _joinRule;
         public: 
-            JoinRulesEvent(int age, std::string origin, std::string sender, std::string statekey, std::string roomid, std::string eventid, std::string creator, Rule rule);
+            JoinRulesEvent(int age, std::string origin, std::string sender, std::string statekey, std::string roomid, std::string eventid, Rule rule);
             Rule getJoinRule();
     };
 }

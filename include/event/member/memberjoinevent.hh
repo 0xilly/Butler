@@ -16,4 +16,5 @@ namespace butler::event
             std::string getDisplayName();
             std::string getMembership();
     };
+
 }
