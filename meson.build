@@ -10,7 +10,14 @@ srcs = [
   'src/event/canonicalaliasevent.cc',
   'src/event/createevent.cc',
   'src/event/joinrulesevent.cc',
-  'src/event/roomevent.cc'
+  'src/event/roomevent.cc',
+  'src/event/powerlevelsevent.cc',
+  'src/event/redactionevent.cc',
+
+  'src/event/message/noticemessageevent.cc',
+  'src/event/message/textmessageevent.cc',
+  'src/event/message/videomessageevent.cc'
+
 ]
 
 exe = executable('butler', srcs,  include_directories : incdir ,install : true)

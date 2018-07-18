@@ -44,7 +44,8 @@
         "algorithm": "cpp",
         "cstring": "cpp",
         "cinttypes": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "iostream": "cpp"
     },
     "discord.enabled": true
 }
